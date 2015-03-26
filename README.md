@@ -1,1 +1,2 @@
 # KamikazeStandaloneDashboard
+TEST
