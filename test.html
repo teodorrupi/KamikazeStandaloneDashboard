@@ -14,19 +14,21 @@
     <!-- Optional theme -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> -->
     <!-- Latest compiled and minified JavaScript -->
-    <script>
-      $(function() {
-        $( "#sortable" ).sortable({
-          revert: true
-        });
-        $( "#draggable" ).draggable({
-          connectToSortable: "#sortable",
-          helper: "clone",
-          revert: "invalid"
-        });
-        $( "ul, li" ).disableSelection();
-      });
-    </script>
+       <script>
+    //   $(function() {
+    //     $( "#sortable" ).sortable({
+    //       revert: true
+    //     });
+    //     $( "#draggable" ).draggable({
+    //       connectToSortable: "#sortable",
+    //       helper: "clone",
+    //       revert: "invalid"
+    //     });
+    //     $( "ul, li" ).disableSelection();
+    //   });
+        </script>
+
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <style type="text/css">
       .card {
@@ -38,6 +40,7 @@
         border-radius: 2px;
         background-clip: padding-box;
       }
+
       .card span.card-title {
         color: #fff;
         font-size: 2em;
@@ -47,6 +50,7 @@
       .card .card-image {
         position: relative;
         overflow: hidden;
+        height:200px !important;
       }
       .card .card-image img {
         border-radius: 2px 2px 0 0;
@@ -87,6 +91,11 @@
         color: #ffd8a6;
         text-decoration: none;
       }
+
+
+
+
+
       .dashboard .content {
         margin-left: 1%; !important;
       }
@@ -184,6 +193,17 @@
   </script>
 
 
+<style type="text/css">
+  .rowCell {
+   margin-right: -21px;
+
+}
+.rowCell img {
+    width: 100%;
+}
+
+</style>
+
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
@@ -221,34 +241,17 @@
     <!--<ul>-->
       <!--<li id="draggable" class="ui-state-highlight">Drag me down</li>-->
     <!--</ul>-->
+
+
     <ul id="sortable">
       <li class="ui-state-default">
-        <div class="col-md-6 col-md-offset-3">
-          <div class="card">
-            <div class="card-image">
-              <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
-            </div>
-            <div id="contentDashboard" class="card-content">
-              <p>Home Content</p>
-            </div>
-            <div class="card-action">
-              <a href="#" target="new_blank">Link</a>
-              <a href="#" target="new_blank">Link</a>
-              <a href="#" target="new_blank">Link</a>
-              <a href="#" target="new_blank">Link</a>
-              <a href="#" target="new_blank">Link</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="ui-state-default">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-4 col-md-offset-0">
           <div class="card">
             <div class="card-image">
               <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
             </div>
             <div id="contentDashboard2" class="card-content">
-              <p>Home Content</p>
+              <p>Home Content 2</p>
             </div>
             <div class="card-action">
               <a href="#" target="new_blank">Link</a>
@@ -260,14 +263,152 @@
           </div>
         </div>
       </li>
-      <li class="ui-state-default">
-        <div class="col-md-6 col-md-offset-3">
+</ul>
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
+                    <div class="card">
+            <div class="card-image">
+              <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
+            </div>
+            <div id="contentDashboard2" class="card-content">
+              <p>Home Content 2</p>
+            </div>
+            <div class="card-action">
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
+                     <div class="card">
+            <div class="card-image">
+              <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
+            </div>
+            <div id="contentDashboard2" class="card-content">
+              <p>Home Content 2</p>
+            </div>
+            <div class="card-action">
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+            </div>
+          </div>              
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
+                <div class="card">
+            <div class="card-image">
+              <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
+            </div>
+            <div id="contentDashboard2" class="card-content">
+              <p>Home Content 2</p>
+            </div>
+            <div class="card-action">
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+            </div>
+          </div>              
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
+                    <div class="card">
+            <div class="card-image">
+              <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
+            </div>
+            <div id="contentDashboard2" class="card-content">
+              <p>Home Content 2</p>
+            </div>
+            <div class="card-action">
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
+                     <div class="card">
+            <div class="card-image">
+              <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
+            </div>
+            <div id="contentDashboard2" class="card-content">
+              <p>Home Content 2</p>
+            </div>
+            <div class="card-action">
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+            </div>
+          </div>              
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
+                <div class="card">
+            <div class="card-image">
+              <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
+            </div>
+            <div id="contentDashboard2" class="card-content">
+              <p>Home Content 2</p>
+            </div>
+            <div class="card-action">
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+            </div>
+          </div>              
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <ul id="sortable">
+
+      <li class="ui-state-default" style="display:inline;">
+        <div class="col-md-4 col-md-offset-0">
         <div class="card">
           <div class="card-image">
             <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
           </div>
           <div id="contentDashboard3" class="card-content">
-            <p>Home Content</p>
+            <p>Home Content 3</p>
           </div>
           <div class="card-action">
             <a href="#" target="new_blank">Link</a>
@@ -277,15 +418,16 @@
             <a href="#" target="new_blank">Link</a>
           </div>
         </div>
-      </div></li>
-      <li class="ui-state-default">
-        <div class="col-md-6 col-md-offset-3">
+      </div>
+
+
+          <div class="col-md-4 col-md-offset-5">
           <div class="card">
             <div class="card-image">
               <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
             </div>
             <div id="contentDashboard4" class="card-content">
-              <p>Home Content</p>
+              <p>Home Content 4</p>
             </div>
             <div class="card-action">
               <a href="#" target="new_blank">Link</a>
@@ -296,6 +438,34 @@
             </div>
           </div>
         </div>
+
+
+      </li>
+
+
+
+
+      <li class="ui-state-default">
+
+          <div class="col-md-5 col-md-offset-0">
+          <div class="card">
+            <div class="card-image">
+              <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
+            </div>
+            <div id="contentDashboard4" class="card-content">
+              <p>Home Content 4</p>
+            </div>
+            <div class="card-action">
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+              <a href="#" target="new_blank">Link</a>
+            </div>
+          </div>
+        </div>
+
+
       </li>
       <li class="ui-state-default">
         <div class="col-md-6 col-md-offset-3">
@@ -304,7 +474,7 @@
               <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
             </div>
             <div id="contentDashboard5" class="card-content">
-              <p>Home Content</p>
+              <p>Home Content 5</p>
             </div>
             <div class="card-action">
               <a href="#" target="new_blank">Link</a>
@@ -317,6 +487,10 @@
         </div>
       </li>
     </ul>
+
+
+
+
 
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">

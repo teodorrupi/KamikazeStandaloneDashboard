@@ -300,6 +300,7 @@
       $ripple.animate({
         "width": Math.max($element.outerWidth(), $element.outerHeight()) * 2,
         "height": Math.max($element.outerWidth(), $element.outerHeight()) * 2,
+        "height": Math.max($element.outerWidth(), $element.outerHeight()) * 2,
         "margin-left": Math.max($element.outerWidth(), $element.outerHeight()) * (-1),
         "margin-top": Math.max($element.outerWidth(), $element.outerHeight()) * (-1),
         "opacity": 0.2
