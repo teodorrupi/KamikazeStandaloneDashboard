@@ -3,11 +3,11 @@
   "main": "test.html",
   "window": {
     "toolbar": false,
-          "width": 1700,
+          "width": 1530,
     "height": 950,
-       "min_width": 1700,
+       "min_width": 1530,
     "min_height": 950,
-      "max_width": 1700,
+      "max_width": 1530,
     "max_height": 950
   }
 
