@@ -170,6 +170,11 @@
         border-radius: 2px;
         z-index: 10;
       }
+
+            .icon-preview:hover i { color: #4285f4; }
+      .icon-preview:hover span { display: block; cursor: text; color: #474747; }
+
+
     </style>
     <script type="text/javascript">
       var count = 0;
@@ -185,7 +190,7 @@
 
 
         $("#add").remove();
-        $( ".sidebar-nav" ).append( '<div class="icon-preview" onclick="myFunction()" ><i class="mdi-action-assignment"></i><span>Test!</span></div>' );
+        $( ".sidebar-nav" ).append( '<div class="icon-preview" onclick="myFunction()" ><i class="mdi-action-assignment"></i></div>' );
         $( ".sidebar-nav" ).append('<div class="icon-preview" onclick="myFunctionb()" ><i value="test" class="mdi-content-add-box"></i></div>');
         count++;
         //alert("I am an alert box!");
@@ -244,7 +249,7 @@
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
-        <div class="icon-preview" id="inhome" onclick="home()"><i class="mdi-action-home"></i><span>Test!</span></div>
+        <div class="icon-preview" id="inhome" onclick="home()"><i class="mdi-action-home"></i></div>
         <div class="icon-preview" id="add" onclick="myFunction()" ><i value="test" class="mdi-content-add-box"></i></div>
       </ul>
     </div>
@@ -588,11 +593,6 @@ label{
 
 
 </style>
-
-
-
-
-
 
 
 
