@@ -1,0 +1,549 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Test</title>
+  <link rel="stylesheet" type="text/css" href="css/jquery.gridster.css">
+  <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    
+    
+    
+</head>
+
+<body>
+
+    
+
+  <div class="gridster">
+    <ul>
+      <li data-row="1" data-col="1" data-sizex="5" data-sizey="3">
+        <header>Intro</header>
+           <div class="container">
+		<div class="col-lg-5 col-sm-6">
+
+            <div class="card hovercard">
+                <div class="cardheader">
+                </div>
+                
+                
+                <div class="avatar">
+                    <img id="avatarimage" alt="" src="https://media.licdn.com/mpr/mpr/shrink_500_500/p/4/005/026/1ad/2cdf823.jpg">
+                </div>
+                
+                
+                
+                <div class="info">
+                    <div class="title">
+                        <p>Bishesh Tiwaree</p>
+                    </div>
+                    <div class="desc">Quality Assurance</div>
+                    <div class="desc">trivago GmbH</div>
+                    <div class="fileUpload btn btn-default">
+                        <span>Change Avatar</span>
+                    <input type="file" class="upload"></input>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+
+</div>
+          
+
+      </li>
+
+      <li data-row="1" data-col="4" data-sizex="2" data-sizey="2">
+        <header>|||</header>
+        2
+      </li>
+      <li data-row="3" data-col="2" data-sizex="2" data-sizey="2">
+        <header>|||</header>
+        3
+      </li>
+
+      <li data-row="4" data-col="1" data-sizex="2" data-sizey="2">
+        <header>|||</header>
+        4
+      </li>
+      <li data-row="3" data-col="1" data-sizex="2" data-sizey="2">
+        <header>|||</header>
+        5
+      </li>
+    
+    
+          <li data-row="3" data-col="6" data-sizex="6" data-sizey="1">
+        <header>|||</header>
+        adsdada
+      </li>
+    
+    
+
+      <li data-row="4" data-col="3" data-sizex="2" data-sizey="2">
+        <header>|||</header>
+              <div class="calendar">
+                <div class="headercal">Monday</div>
+                <div class="num-day">27</div>
+                <div class="num-month">Friday</div>
+              </div>
+  
+      </li>
+
+    
+          <li data-row="4" data-col="5" data-sizex="7" data-sizey="2">
+        <header>|||</header>
+Notifications  
+      </li>
+    
+    
+    </ul>
+  </div>
+
+
+
+    
+
+    <style type="text/css">
+
+      .gridster li header {
+        background: #999;
+        display: block;
+        font-size: 20px;
+        line-height: normal;
+        padding: 4px 0 6px ;
+        margin-bottom: 20px;
+        cursor: move;
+      }
+
+        
+        
+        
+/*        For calendar*/
+        
+        
+.calendar {
+    margin: 2px auto;
+    width: 200px;
+    height: 190px;
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    position: relative;
+    background: #FFF;
+    }
+
+.headercal {
+    height: 50px;
+    background: #e74c3c;
+    -webkit-border-top-right-radius: 24px;
+    -moz-border-radius-topright: 24px;
+    border-top-right-radius: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -moz-border-radius-topleft: 24px;
+    border-top-left-radius: 24px;
+  width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  line-height: 50px;
+    }
+
+.num-day {
+    margin-top: 20px;
+    height: 100px;
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 0px 0px 15px 15px;
+    }
+
+.num-month {
+    height: 20px;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+     margin-top:-40px;
+    }
+
+
+.headercal:before {
+    background: #333;
+    height: 1px;
+    width: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    padding: 4px;
+    }
+
+.headercal:after {
+    background: #333;
+    height: 1px;
+    width: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    padding: 4px;
+    }
+
+        
+        
+        
+    </style>
+
+
+
+
+<!-- style for the comment block added later-->
+
+<style type="text/css">
+    
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 2px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card .card-heading {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.card .card-heading.simple {
+    font-size: 20px;
+    font-weight: 300;
+    color: #777;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card .card-heading.image img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    vertical-align: top;
+    border: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.card .card-heading.image .card-heading-header {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card .card-heading.image .card-heading-header h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.card .card-heading.image .card-heading-header span {
+    font-size: 10px;
+    color: #999999;
+}
+
+.card .card-body {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.card .card-media {
+    padding: 0 20px;
+    margin: 0 -14px;
+}
+
+.card .card-media img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card .card-actions {
+    min-height: 30px;
+    padding: 0 20px 20px 20px;
+    margin: 20px 0 0 0;
+}
+
+.card .card-comments {
+    padding: 20px;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.card .card-comments .comments-collapse-toggle {
+    padding: 0;
+    margin: 0 20px 12px 20px;
+}
+
+.card .card-comments .comments-collapse-toggle a,
+.card .card-comments .comments-collapse-toggle span {
+    padding-right: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-comments .media-heading {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card.people {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 300px;
+    padding-top: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.card.people:first-child {
+    margin-left: 0;
+}
+
+.card.people .card-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 170px;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.card.people .card-top.green {
+    background-color: #53a93f;
+}
+
+.card.people .card-top.blue {
+    background-color: #427fed;
+}
+
+.card.people .card-info {
+    position: absolute;
+    top: 150px;
+    display: inline-block;
+    width: 100%;
+    height: 101px;
+    overflow: hidden;
+    background: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.people .card-info .title {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #404040;
+}
+
+.card.people .card-info .desc {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.people .card-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
+}
+
+.card.hovercard .cardheader {
+    background: url("http://thethreex.com/wp-content/uploads/2015/02/munich.jpg");
+    background-size: cover;
+    height: 150px;
+    
+}
+
+.card.hovercard .avatar {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+}
+
+.card.hovercard .info {
+    padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+
+
+
+</style>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        
+        
+        
+        
+
+
+        var gridster;
+
+        
+        function imageIsLoaded(e) {
+    $("#avatarimage").attr("src", e.target.result);
+};
+        
+        
+      $(function(){
+                  var d = new Date();
+            
+          
+          var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+var month_string = month[d.getMonth()];
+          
+          
+          
+          
+        $(".num-day").text(d.getDate()); 
+            $(".num-month").text(month_string); 
+            $(".headercal").text(d.getFullYear());
+          
+              $(":file").change(function () {
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = imageIsLoaded;
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+          
+          
+
+        gridster = $(".gridster ul").gridster({
+          widget_base_dimensions: [100, 120],
+          widget_margins: [5, 5],
+          draggable: {
+            handle: 'header'
+          }
+        }).data('gridster');
+
+      });
+    </script>
+</body>
+</html>

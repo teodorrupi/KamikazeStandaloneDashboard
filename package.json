@@ -1,14 +1,11 @@
 {
   "name": "nw-demo",
-  "main": "test.html",
+  "main": "grid.html",
   "window": {
     "toolbar": false,
           "width": 1530,
-    "height": 950,
-       "min_width": 1530,
-    "min_height": 950,
-      "max_width": 1530,
-    "max_height": 950
+    "height": 950
+
   }
 
 }
