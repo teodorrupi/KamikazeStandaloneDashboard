@@ -2,10 +2,14 @@
 <!doctype html>
 <html>
 <head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
+
   <title>Test</title>
   <link rel="stylesheet" type="text/css" href="css/jquery.gridster.css">
   <link rel="stylesheet" type="text/css" href="css/demo.css">
     <!-- Latest compiled and minified CSS -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 <!-- Optional theme -->
@@ -21,14 +25,18 @@
 
 <body>
 
-    
-
+<!--    http://gridster.net/demos/custom-drag-handle-->
+<!--http://bootsnipp.com/snippets/featured/profile-card-->
   <div class="gridster">
     <ul>
       <li data-row="1" data-col="1" data-sizex="5" data-sizey="3">
+
+
+        <img class="testingshit" alt="Move to trash" style=" margin-left:45%; width:5%; position: absolute; z-index:5;" src="trash.png">
+
         <header>Intro</header>
            <div class="container">
-		<div class="col-lg-5 col-sm-6">
+        <div class="col-lg-5 col-sm-6">
 
             <div class="card hovercard">
                 <div class="cardheader">
@@ -43,10 +51,10 @@
                 
                 <div class="info">
                     <div class="title">
-                        <p>Bishesh Tiwaree</p>
+                        Bishesh Tiwaree
                     </div>
-                    <div class="desc">Quality Assurance</div>
-                    <div class="desc">trivago GmbH</div>
+                    <div id="jobname" class="desc">Quality Assurance</div>
+                    <div id="jobcompany" class="desc">trivago GmbH</div>
                     <div class="fileUpload btn btn-default">
                         <span>Change Avatar</span>
                     <input type="file" class="upload"></input>
@@ -63,27 +71,38 @@
       </li>
 
       <li data-row="1" data-col="4" data-sizex="2" data-sizey="2">
+
+              <img id="avatarimage" class="testingshit" alt="Move to trash" style=" margin-left:35%; width:15%; position: absolute; z-index:5;" src="trash.png">
+
         <header>|||</header>
         2
       </li>
       <li data-row="3" data-col="2" data-sizex="2" data-sizey="2">
+              <img id="avatarimage" class="testingshit" alt="Move to trash" style=" margin-left:35%; width:15%; position: absolute; z-index:5;" src="trash.png">
+
         <header>|||</header>
         3
       </li>
 
       <li data-row="4" data-col="1" data-sizex="2" data-sizey="2">
+              <img id="avatarimage" class="testingshit" alt="Move to trash" style=" margin-left:35%; width:15%; position: absolute; z-index:5;" src="trash.png">
+
         <header>|||</header>
         4
       </li>
       <li data-row="3" data-col="1" data-sizex="2" data-sizey="2">
+                    <img id="avatarimage" class="testingshit" alt="Move to trash" style=" margin-left:35%; width:15%; position: absolute; z-index:5;" src="trash.png">
+
         <header>|||</header>
         5
       </li>
     
     
           <li data-row="3" data-col="6" data-sizex="6" data-sizey="1">
+                        <img id="avatarimage" class="testingshit" alt="Move to trash" style=" margin-left:45%; width:5%; position: absolute; z-index:5;" src="trash.png">
+
         <header>|||</header>
-        adsdada
+        
       </li>
     
     
@@ -109,7 +128,22 @@ Notifications
   </div>
 
 
+   <div class="container">
 
+      <h1>X-editable starter template</h1>
+
+      <div>
+        <span>Username:</span>
+        <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter username">superuser</a>
+      </div>
+      
+      <div>
+        <span>Status:</span>
+        <a href="#" id="status"></a>
+      </div>
+
+      
+    </div>
     
 
     <style type="text/css">
@@ -209,6 +243,11 @@ Notifications
         
         
         
+/*        css for fancy stopwatch*/
+        
+        
+        
+        
     </style>
 
 
@@ -219,20 +258,20 @@ Notifications
 <style type="text/css">
     
 .fileUpload {
-	position: relative;
-	overflow: hidden;
-	margin: 2px;
+    position: relative;
+    overflow: hidden;
+    margin: 2px;
 }
 .fileUpload input.upload {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 0;
-	padding: 0;
-	font-size: 15px;
-	cursor: pointer;
-	opacity: 0;
-	filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 
 .card {
@@ -478,28 +517,72 @@ Notifications
 }
 
 
+    
+    
+    
+    
+    
+/*    Fot the stopclock*/
 
+    
+    
+    
+    
+    
 </style>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
     <script src="js/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/taffydb/2.7.2/taffy.js"></script>
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+<script src="js/notiny.js"></script>
+<link href="css/notiny.css" rel="stylesheet">
+
+<script type= "text/JavaScript">
+    
+
+        var people= TAFFY();
+        people.insert({"fname":"Bruce","lname":"Bond", "Job":"Quality Assurance", "Company":"trivago GmbH, Düsseldorf"});
+        people.insert({"fname":"Peter","lname":"Parker"});
+        people.insert({"fname":"Clark","lname":"Kent"});
+              
+        var counting = ("people().count()");
+
+        $(".title").text( 'Hey ' .concat(eval('people({fname:"Bruce"}).select("lname")'), "!"));
+        $("#jobname").text( eval('people({fname:"Bruce"}).select("Job")'), "!");
+        $("#jobcompany").text(eval('people({fname:"Bruce"}).select("Company")'), "!");
+
+
+</script>
+
+
 
     <script type="text/javascript">
         
         
-        
+
+
+          
         
 
 
-        var gridster;
-
-        
         function imageIsLoaded(e) {
     $("#avatarimage").attr("src", e.target.result);
+$.notiny({ text: 'Image Uploaded!', position: 'right-top' });
 };
         
         
       $(function(){
+
+
+
+$(".gridster ul .testingshit").click(function(){
+        $(this.parentNode).addClass("activ");
+        gridster.remove_widget($('.activ'));
+});
+
+
+
                   var d = new Date();
             
           

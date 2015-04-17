@@ -17,7 +17,8 @@ body {
     font-size: 16px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #444;
-    background-color: #fff;
+    background-image: url('http://www.zastavki.com/pictures/originals/2013/Nature___Seasons___Autumn__039922_.jpg');
+    background-repeat: no-repeat;
     margin: 30px 40px;
 }
 
@@ -29,9 +30,6 @@ body {
 /* gridster
 /*/
 
-.gridster ul {
-    background-color: #fff;
-}
 
 .gridster li {
     font-size: 1em;
@@ -44,8 +42,9 @@ body {
 .gridster {
     margin: 0 5% auto;
 
-    opacity: .8;
-    width: 80%;
+    opacity: 0.8;
+    width: 90%;
+    
 
     -webkit-transition: opacity .6s;
     -moz-transition: opacity .6s;
@@ -61,6 +60,7 @@ body {
 
 .gridster .player {
     background: #BBB;
+    opacity: inherit;
 }
 
 

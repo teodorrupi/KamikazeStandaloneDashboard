@@ -3,9 +3,11 @@
   "main": "grid.html",
   "window": {
     "toolbar": false,
-          "width": 1530,
+    "width": 1530,
     "height": 950
-
+  },
+  "dependencies": {
+    "node-php-server": "~0.1.2",
+    "express": "~4.12.3"
   }
-
 }
